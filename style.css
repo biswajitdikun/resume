@@ -171,5 +171,5 @@ footer {
 
 /* Move profile picture up and right in about section */
 .about .img-thumbnail {
-  transform: translate(24px, -24px);
+  transform: translate(40px, -40px);
 }
