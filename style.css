@@ -168,3 +168,8 @@ footer {
     padding-right: 80px;
   }
 }
+
+/* Move profile picture up and right in about section */
+.about .img-thumbnail {
+  transform: translate(24px, -24px);
+}
