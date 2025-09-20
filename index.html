@@ -45,22 +45,29 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="btn nav-link" href="#about" id="navtext">About <span class="sr-only">(current)</span></a>
+                    <a class="btn nav-link" href="#about" id="navtext" data-target=".navbar-collapse.show">About <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn nav-link" href="#experience" id="navtext">Experience</a>
+                    <a class="btn nav-link" href="#experience" id="navtext"
+                        data-target=".navbar-collapse.show">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn nav-link" href="#education" id="navtext">Education</a>
+                    <a class="btn nav-link" href="#education" id="navtext"
+                        data-target=".navbar-collapse.show">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn nav-link" href="#project" id="navtext">Projects</a>
+                    <a class="btn nav-link" href="#project" id="navtext" data-target=".navbar-collapse.show">
+                        Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn nav-link" href="#achievements" id="navtext" data-target=".navbar-collapse.show">Achievements</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn nav-link" href="#papers" id="navtext">Papers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn nav-link" href="./cv.pdf" id="navtext">Resume</a>
+                    <a class="btn nav-link" href="./resume.pdf" id="navtext">Resume</a>
                 </li>
             </ul>
         </div>
@@ -74,30 +81,31 @@
             </section>
         </h2>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-8 about-text">
                 <h4 id="heading3">
                     <br> I love building and experimenting with digital creations,
-                    <br> from websites to applications and everything in between. <br>
-                    <br> Solid expertise in Algorithms and Distributed Systems <br>
-                    <br> As an experienced Software Engineer, I tackle large-scale challenges <br>
-                    <br> using my technical skills<br>
+                    <br> from websites to applications and everything in between <br>
+                    <br> Solid expertise in Algorithms, Distributed Systems, and Cloud Technologies <br>
+                    <br> As a Senior Software Engineer, I tackle large-scale challenges <br>
+                    <br> using my technical skills to drive automation and performance optimization<br>
                     <br> Committed to driving organizational success and improving business outcomes <br>
                     <br>
                     <p id="heading3"> Here are some technologies I've been working with recently: <br>
                     <ul class="list-inline" id="main">
                         <h4>
                             <li class="badge border list-inline-item"
-                                style="border-color:rgb(100, 255, 218)!important ;">Programming: C++,Python,Java, Go Lang
+                                style="border-color:rgb(100, 255, 218)!important ;">Programming: C++, Python, Java, Go, JavaScript
                             </li>
                             <li class="badge border list-inline-item"
-                                style="border-color:rgb(100, 255, 218)!important ;">Development: Node.js, React.js,
-                                Flask,Django, HTML/CSS, REST APIs</li>
+                                style="border-color:rgb(100, 255, 218)!important ;">Development: Node.js, React.js, Django, Express.js, REST APIs</li>
                             <li class="badge border list-inline-item"
-                                style="border-color:rgb(100, 255, 218)!important ;">Database Systems: MongoDB, SQL
+                                style="border-color:rgb(100, 255, 218)!important ;">Database Systems: MongoDB, MySQL, PostgreSQL, Redis
                             </li>
                             <li class="badge border list-inline-item"
-                                style="border-color:rgb(100, 255, 218)!important ;">Software Technologies: Git,
-                                Kubernetes, JIRA, Jenkins, Docker
+                                style="border-color:rgb(100, 255, 218)!important ;">Cloud & DevOps: Docker, Kubernetes, CI/CD, Jenkins, Azure, Digital Ocean
+                            </li>
+                            <li class="badge border list-inline-item"
+                                style="border-color:rgb(100, 255, 218)!important ;">Tools: Git, JIRA, Salesforce, Twilio, Stripe
                             </li>
                         </h4>
                     </ul>
@@ -109,7 +117,7 @@
             </div>
         </div>
         <p>
-            <a class="btn border btn-lg" href="./cv.pdf" role="button"
+            <a class="btn border btn-lg" href="./resume.pdf" role="button"
                 style="color: rgb(100, 255, 218);border-color:  rgb(100, 255, 218)!important;">
                 Resume
             </a>
@@ -128,29 +136,34 @@
             <div class="col-md-12">
                 <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
                     style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
-                    <h1 class="h2 mb-3" id="heading4">Software Developer (Feb 2022 - June 2024)</h1>
+                    <h1 class="h2 mb-3" id="heading4">Varmodel AI, Senior Software Engineer</h1>
+                    <p class="mt-4 text-black-90 flex-fill" id="heading3">
+                        Austin, TX, USA
+                    </p>
+                    <p>May 2024 - Present</p>
+                    <ul>
+                        <li><strong>Partner Intelligence Automation:</strong> Built Google Apps Script integrated with Gemini API for structured enrichment of spreadsheet data through dynamic batching with state management, JSON parsing, and error recovery—reducing manual effort by 80% and accelerating go-to-market readiness.</li>
+                        <li><strong>Full-Stack SaaS Platform:</strong> Standardized and deployed a full-stack SaaS platform on DigitalOcean using Docker (Django, Nuxt.js, PostgreSQL), with CI/CD pipeline to automate testing and deployment. Restored production DB snapshots across containerized environments—cutting environment-related bugs by 30% and speeding up release cycles.</li>
+                        <li><strong>Enterprise Integrations:</strong> Implemented scalable integrations with Salesforce, Twilio, Stripe, and LinkedIn OAuth in Django backend via REST APIs, orchestrating OAuth2.0 authentication, webhook processing, and real-time data pipelines that automated 70%+ of manual workflows.</li>
+                        <li><strong>Comment System Development:</strong> Developed and launched a feature-rich comment system for a user engagement platform, utilizing Django REST Framework to deliver secure, high-throughput APIs for comment creation, moderation, and display. Optimized database interactions and designed efficient nested data structures for frontend consumption, resulting in a 15% increase in user engagement with posts and a 10% reduction in page load times for comment-heavy content.</li>
+                        <li><strong>Semantic Search Solution:</strong> Architected and implemented a production-ready semantic search solution for a Django/PostgreSQL application, integrating Qdrant vector database and automating company data vectorization using OpenAI embeddings and Django signals, boosting search relevance by 25% and reducing user search time by an average of 30%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">AppViewX, Software Engineer</h1>
                     <p class="mt-4 text-black-90 flex-fill" id="heading3">
                         AppViewX, India
                     </p>
-                    <strong>Application Delivery Controller</strong> 
+                    <p>February 2022 - June 2024</p>
                     <ul>
-                        <li>At AppViewX, I played a key role in enhancing automation and orchestration processes:
-                            <ul>
-                                <li>Implemented a user-friendly interface using Python supporting CRUD functionalities of Nginx devices, empowering teams to effortlessly manage over 1,500 unique upstream configurations, which directly addressed key pain points, significantly improving service uptime.</li>
-                                <li>Optimized profile addition for F5 load balancing devices by transitioning the time complexity from O(n2) to O(n log n) using a sorting-based approach and binary search in Java. This enhancement reduced execution time by nearly 30% for managing 10,000+ devices, significantly improving operational speed and scalability.</li>
-                                <li>Streamlined the flow of information between the AppViewX GUI and various backend services, improving system efficiency, reducing manual intervention that previously required around 50 hours of monthly work.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <strong>Kube+ Certificate Lifecycle Management:</strong> 
-                    <ul>
-                        <li>In this project, I focused on improving user experience and operational efficiency:
-                            <ul>
-                                <li>Built an end-to-end flow for selecting and saving certificate options that seamlessly triggers backend processes interacting with the Python SDK to update the database. This solution enhanced the user experience for critical customers and eased out the management of over 50,000 certificates.</li>
-                                <li>Developed methods to fetch and pre-select data from the database, allowing for a seamless user experience.</li>
-                                <li>Developed automated workflows for Kubernetes cluster deletion based on user-selected parameters, incorporating complex logic for optimal cluster selection. Additionally, created methods to fetch and pre-select data from the database and implemented several backend APIs using Java to perform these tasks, ensuring accurate configurations.</li>
-                            </ul>
-                        </li>
+                        <li><strong>Nginx Management Interface:</strong> Implemented a user-friendly interface using Python supporting CRUD functionalities of Nginx devices, empowering teams to effortlessly manage over 1,500 unique upstream configurations, significantly improving service uptime.</li>
+                        <li><strong>Performance Optimization:</strong> Optimized profile addition for F5 load balancing devices by transitioning time complexity from O(n²) to O(n log n) using sorting-based approach and binary search in Java, reducing execution time by nearly 30% for managing 10,000+ devices.</li>
+                        <li><strong>System Integration:</strong> Streamlined information flow between AppViewX GUI and backend services, reducing manual intervention that previously required around 50 hours of monthly work.</li>
+                        <li><strong>Certificate Management:</strong> Built end-to-end flow for certificate selection and saving that triggers backend processes interacting with Python SDK to update MongoDB database, easing management of over 50,000 certificates.</li>
+                        <li><strong>Kubernetes Automation:</strong> Developed automated workflows for Kubernetes cluster deletion based on user-selected parameters, incorporating complex logic for optimal cluster selection and implementing backend APIs using Java.</li>
                     </ul>
                     <p>Overall, my work has centered on leveraging technology to streamline processes, enhance user experiences, and improve operational efficiencies across multiple platforms.</p>
                 </div>
@@ -184,85 +197,101 @@
             <div class="col-md-12">
                 <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
                     style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
-                    <h1 class="h2 mb-3" id="heading4">Boston University, Master in Computer Science (MSCS)</h1>
+                    <h1 class="h2 mb-3" id="heading4">Boston University, Master of Science in Computer Science (MSCS)</h1>
                     <p class="mt-4 text-black-90 flex-fill" id="heading3">
-                        Boston, MA
+                        Boston, MA, USA
                     </p>
-                    <p>Sep 2024 - Present</p>
-                    <p>Courses: Object Oriented Design Principles(Java), Graduate Algorithms, Database Management Systems(C++), Distributed Systems(Go)</p>
+                    <p>September 2024 - Present</p>
+                    <p>Courses: Object Oriented Design, Graduate Algorithms, Database Management System, Distributed Systems</p>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
                     style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
-                    <h1 class="h2 mb-3" id="heading4">Vellore Institute of Technology, Bachelor in Computer Science & Engineering</h1>
+                    <h1 class="h2 mb-3" id="heading4">Vellore Institute of Technology, Bachelor of Technology in Computer Science & Engineering</h1>
                     <p class="mt-4 text-black-90 flex-fill" id="heading3">
                         Chennai, India
                     </p>
-                    <p>Aug 2018 - May 2022</p>
-                    <p>GPA: 8.54/10</p>
-                    <p>Courses: Full Stack Web Development, Data Structures and Algorithms, Cyber Security, Image Processing, Database Management Systems</p>
+                    <p>August 2018 - May 2022</p>
+                    <p>GPA: 8.55/10</p>
+                    <p>Courses: Full Stack Web Development, Data Structures and Algorithms, Cyber Security, Image
+                        Processing, Database Management Systems
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-   <!-- Projects Starts -->
-   <div class="container" id="project">
-    <h2>
-        <section id="main">
-            04. Some Things I've Built
-        </section>
-    </h2><br>
-    <div class="row">
-        <!-- Ecommerce Shopping Project -->
-        <div class="col-md-12">
-            <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
-                style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
-                <div class="d-flex align-items-center">
-                    <!-- Project Title -->
-                    <h1 class="h2 mb-3" id="heading4">Ecommerce Shopping</h1>
-                    <!-- GitHub Link with Chain Icon -->
-                    <a href="https://github.com/biswajitdikun/Ecommerce" target="_blank" style="color: rgb(100, 255, 218); margin-left: 10px;">
-                        <i class="fas fa-link fa-lg"></i> <!-- Font Awesome Chain Icon -->
-                    </a>
+    <!-- Projects Starts -->
+    <div class="container" id="project">
+        <h2>
+            <section id="main">
+                04. Some Things I've Built
+            </section>
+        </h2><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">Key-Value Store (Distributed Systems)</h1>
+                    <p class="mt-4 text-black-90 flex-fill" id="heading3">
+                        Technologies: Go, Docker, Consensus Protocol
+                    </p>
+                    <ul>
+                        <li>Implemented a distributed key-value store based on the Consensus protocol, developed from the ground up.</li>
+                        <li>Ensured data storage and retrieval using sharding with consistency and fault tolerance, achieving 50% increase in speed.</li>
+                        <li>Built a robust distributed system that handles data replication and failure recovery.</li>
+                    </ul>
                 </div>
-                <p class="mt-4 text-black-90 flex-fill" id="heading3">
-                    Technologies: MongoDB, Express, React, Node
-                </p>
-                <ul>
-                    <li>Fully functional Ecommerce web application with features of search, filter, and pagination of products.</li>
-                    <li>The user can log in/Register (Forgot Password), selects a product- add to cart, check out, and proceed for payment (using Stripe) and can view order status.</li>
-                    <li>The admin login has an additional dashboard where the orders received can be processed to shipping and delivered. The admin can see all the users, products, and stocks, reviews, can create a new product, can make a user an admin.</li>
-                    <li>The web application supports the update of Profilename, picture, and password and is responsive to web and phone screens.</li>
-                </ul>
             </div>
-        </div>
 
-        <!-- Farm Helper Project -->
-        <div class="col-md-12">
-            <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
-                style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
-                <div class="d-flex align-items-center">
-                    <!-- Project Title -->
-                    <h1 class="h2 mb-3" id="heading4">Farm Helper</h1>
-                    <!-- GitHub Link with Chain Icon -->
-                    <a href="https://github.com/biswajitdikun/Farmer-s-guide" target="_blank" style="color: rgb(100, 255, 218); margin-left: 10px;">
-                        <i class="fas fa-link fa-lg"></i> <!-- Font Awesome Chain Icon -->
-                    </a>
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">Efficient Data Management System</h1>
+                    <p class="mt-4 text-black-90 flex-fill" id="heading3">
+                        Technologies: C++, B+ Trees, LSM Trees, Buffer Pool
+                    </p>
+                    <ul>
+                        <li>Built a database management system featuring a buffer pool for optimized data access using LRU eviction policy.</li>
+                        <li>Implemented efficient data insertion, modification, and deletion using B+ Trees and LSM trees, ensuring high-performance reads and writes.</li>
+                        <li>Achieved 40% reduction in query response time through optimized data structures and caching strategies.</li>
+                    </ul>
                 </div>
-                <p class="mt-4 text-black-90 flex-fill" id="heading3">
-                    Technologies: Java, MVC, OOPS Design Patterns
-                </p>
-                <ul>
-                    <li>Developed a smart solution using modern ICT tools for farmers and the government of India’s agricultural department.</li>
-                    <li>Created a web app for officers and a mobile app for farmers to enhance agricultural efficiency.</li>
-                    <li>Enabled crop yield prediction, plant disease detection through image uploads, and integrated a chatbot for farmer queries.</li>
-                    <li>Provided features for purchasing fertilizers, selling crops at government-fixed rates, and e-fencing land.</li>
-                    <li>Facilitated crisis management with a feature for farmers to request aid.</li>
-                </ul>
             </div>
-        </div>
+
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">Ecommerce Shopping Platform</h1>
+                    <p class="mt-4 text-black-90 flex-fill" id="heading3">
+                        Technologies: MongoDB, Express, React, Node.js, Stripe, Docker, Azure
+                    </p>
+                    <ul>
+                        <li>Developed a responsive e-commerce web application using MERN stack with search, filter, and pagination features.</li>
+                        <li>Integrated Stripe for secure payment processing and built an admin dashboard for order processing and product/user management.</li>
+                        <li>Deployed the application on Microsoft Azure using Dockerized containers for scalability and reliability.</li>
+                        <li>Implemented user authentication, cart management, and order tracking functionality.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">Farm Helper (Smart Agriculture Solution)</h1>
+                    <p class="mt-4 text-black-90 flex-fill" id="heading3">
+                        Technologies: Java, MVC, OOPS Design Patterns, AI/ML
+                    </p>
+                    <ul>
+                        <li>Developed a smart solution using modern ICT tools for farmers and the government of India's agricultural department.</li>
+                        <li>Created a web app for officers and a mobile app for farmers to enhance agricultural efficiency.</li>
+                        <li>Enabled crop yield prediction, plant disease detection through image uploads, and integrated a chatbot for farmer queries.</li>
+                        <li>Provided features for purchasing fertilizers, selling crops at government-fixed rates, and e-fencing land.</li>
+                        <li>Facilitated crisis management with a feature for farmers to request aid.</li>
+                    </ul>
+                </div>
+            </div>
 
         <!-- Board Games Project -->
         <div class="col-md-12">
@@ -333,15 +362,36 @@
             </div>
         </div>
 
-    </div> 
-</div>
+    </div>
+    <!-- Projects Ends -->
 
+    <!-- Achievements Starts -->
+    <div class="container" id="achievements">
+        <h2>
+            <section id="main">
+                05. Achievements & Recognition
+            </section>
+        </h2><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
+                    style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
+                    <h1 class="h2 mb-3" id="heading4">Hackathons & Competitions</h1>
+                    <ul>
+                        <li><strong>Smart India Hackathon:</strong> Participated in the national-level hackathon focused on solving real-world problems using technology.</li>
+                        <li><strong>Hackerearth:</strong> Competed in various coding challenges and hackathons on the Hackerearth platform.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievements Ends -->
 
     <!-- Blog Starts -->
     <div class="container" id="papers">
         <h2>
             <section id="main">
-                05. Research paper I've worked on
+                06. Research paper I've worked on
             </section>
         </h2><br>
 
@@ -350,15 +400,16 @@
                 <div class="shadow-yellow border border-near-black border-width-2 border-radius-2 p-4 d-flex flex-column justify-content-between"
                     style="height: 100%; background-color: rgb(10, 25, 47); border-color: rgb(100, 255, 218)!important;">
                     <h1 class="h2 mb-3" id="heading4">Integration of Lazy Learning associative classification with KNN algorithm</h1>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/8899415">
+                        <i class="fas fa-external-link-alt fa-2x" style="color: rgb(100, 255, 218);"></i>
+                    </a>
                     <p class="mt-4 text-black-90 flex-fill" id="heading3">
                         IEEE International Conference on Vision Towards Emerging Trends in Communication and Networking - Mar 30, 2019
                     </p>
                     <p class="mb-1">
                         Preeti Tamrakar, Siddharth Singha Roy, <b>Biswajit Satapathy</b>, S. P. Syed Ibrahim
                     </p>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/8899415">
-                        <i class="fas fa-external-link-alt fa-2x" style="color: rgb(100, 255, 218);"></i>
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -369,7 +420,7 @@
     <div class="container" id="contact">
         <h2>
             <section id="main">
-                06. What's Next?
+                07. What's Next?
             </section>
         </h2><br>
         <div class="touch" align="center">
@@ -384,6 +435,8 @@
                 style="color: rgb(100, 255, 218);border-color:  rgb(100, 255, 218)!important;">
                 Email at bisusatapahy2000@gmail.com
             </a>
+            <br><br>
+            <p id="heading3">📍 Austin, TX, USA | 📞 +1 857-316-6048</p>
         </div>
     </div>
     <!-- Get in Touch Ends -->

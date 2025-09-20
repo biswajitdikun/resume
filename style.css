@@ -154,3 +154,22 @@ footer {
 }
 
 /* Pre-loader Ends */
+
+/* Add extra right padding to about section text to prevent overlap with image */
+@media (min-width: 768px) {
+  .about-text {
+    padding-right: 48px;
+  }
+}
+
+/* Optionally, increase further for xl screens */
+@media (min-width: 1200px) {
+  .about-text {
+    padding-right: 80px;
+  }
+}
+
+/* Move profile picture up and right in about section */
+.about .img-thumbnail {
+  transform: translate(40px, -40px);
+}
