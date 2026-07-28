@@ -155,21 +155,40 @@ footer {
 
 /* Pre-loader Ends */
 
-/* Add extra right padding to about section text to prevent overlap with image */
-@media (min-width: 768px) {
-  .about-text {
-    padding-right: 48px;
+/* About section layout */
+.about .row {
+  align-items: flex-start;
+}
+
+.about-text {
+  padding-right: 1.5rem;
+}
+
+.about-text .list-inline-item {
+  margin-bottom: 0.5rem;
+  white-space: normal;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .about-photo {
+    justify-content: flex-end;
   }
 }
 
-/* Optionally, increase further for xl screens */
-@media (min-width: 1200px) {
-  .about-text {
-    padding-right: 80px;
-  }
+.about-photo-wrapper {
+  max-width: 260px;
+  width: 100%;
+  margin-top: -2rem;
 }
 
-/* Move profile picture up and right in about section */
 .about .img-thumbnail {
-  transform: translate(40px, -40px);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 15px -15px 0 -3px var(--background), 15px -15px var(--green);
 }
